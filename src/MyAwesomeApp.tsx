@@ -23,16 +23,17 @@ const myStyle: CSSProperties = {
 export const MyAwesomeApp = () => {
 
   return (
-    <>
-      <h1>{firstName}</h1>
+    <div>
+      <h1 data-testid="first-name-title">{firstName}</h1>
       <h3>{lastName}</h3>
-      <p>{favoriteGames.join(', ')}</p>
+
+      <p className="mi-clase-favprito">{favoriteGames.join(', ')}</p>
 
       <h1>{isActive ? 'activo' : 'no activo'}</h1>
       {/* Para imprimir el objeto y convertirlo a string hacemos uso de JSON.stringify() */}
       <p
         style={myStyle}
       >{JSON.stringify(address)}</p>
-    </>
+    </div>
   )
 }
