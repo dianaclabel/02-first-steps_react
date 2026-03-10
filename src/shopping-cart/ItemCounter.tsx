@@ -15,6 +15,8 @@ export const ItemCounter = ({ name, quantity = 1 }: Props) => {
   const [count, setCount] = useState(quantity);
 
   const handleAdd = () => {
+    console.log('Hola mundo desde ItemCounter');
+
     setCount(count + 1)
 
   }
@@ -28,9 +30,6 @@ export const ItemCounter = ({ name, quantity = 1 }: Props) => {
   // const handleClick = () => {
   //   console.log(`click en ${name}`);
   // }
-
-
-
 
   return (
     <section className={styles.itemRow}>

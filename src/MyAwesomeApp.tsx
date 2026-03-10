@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import { test } from 'vitest';
 
 const firstName = "Diana";
 const lastName = "Clabel";
@@ -23,7 +24,7 @@ const myStyle: CSSProperties = {
 export const MyAwesomeApp = () => {
 
   return (
-    <div>
+    <div data-testid="div-app">
       <h1 data-testid="first-name-title">{firstName}</h1>
       <h3>{lastName}</h3>
 

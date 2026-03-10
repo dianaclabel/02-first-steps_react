@@ -2,7 +2,9 @@
 
 exports[`myAwesomeApp > should match snapshot 1`] = `
 <div>
-  <div>
+  <div
+    data-testid="div-app"
+  >
     <h1
       data-testid="first-name-title"
     >
@@ -25,5 +27,33 @@ exports[`myAwesomeApp > should match snapshot 1`] = `
       {"zipCode":"ABC-123","country":"Canada"}
     </p>
   </div>
+</div>
+`;
+
+exports[`myAwesomeApp > should match snapshot 2`] = `
+<div
+  data-testid="div-app"
+>
+  <h1
+    data-testid="first-name-title"
+  >
+    Diana
+  </h1>
+  <h3>
+    Clabel
+  </h3>
+  <p
+    class="mi-clase-favprito"
+  >
+    Elden Ring, Smash, Metal gear
+  </p>
+  <h1>
+    activo
+  </h1>
+  <p
+    style="background-color: rgb(250, 250, 250); border-radius: 20px; padding: 10px;"
+  >
+    {"zipCode":"ABC-123","country":"Canada"}
+  </p>
 </div>
 `;
