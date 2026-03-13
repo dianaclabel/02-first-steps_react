@@ -45,7 +45,7 @@ describe('FirstStepsApp', () => {
   })
 
   // prueba 3
-  test('should render ItemCounter with correct props', () => {
+  test('should render ItemCounter with correct props y 3 veces', () => {
     render(<FirstStepsApp />)
 
     //toHaveBeenCalledTimes -> indica cuantas veces ha sido llamado el mockItemCounter 
